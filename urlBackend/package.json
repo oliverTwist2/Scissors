@@ -4,7 +4,11 @@
   "description": "Url shortner",
   "main": "index.js",
   "scripts": {
-    "devStart": "nodemon index.js"
+    "devStart": "nodemon index.js",
+    "start": "node .",
+    "swagger-autogen": "node ./swagger.js",
+    "sequelize": "sequelize",
+    "db:makemigrations": "./node_modules/sequelize-auto-migrations/bin/makemigrations.js"
   },
   "author": "Ikegah Oliver",
   "license": "ISC",
@@ -13,7 +17,10 @@
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "mongoose": "^7.3.1",
-    "shortid": "^2.2.16"
+    "shortid": "^2.2.16",
+    "swagger-autogen": "^2.23.4",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^4.6.3"
   },
   "devDependencies": {
     "nodemon": "^2.0.22"
